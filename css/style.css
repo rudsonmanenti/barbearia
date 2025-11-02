@@ -29,7 +29,7 @@ body {
   line-height: 1.5;
   background: 
     linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
-    url("./img/fundo-barbearia.png") no-repeat center center fixed;
+    url("../img/fundo-barbearia.png") no-repeat center center fixed;
   background-size: cover;
 }
 
