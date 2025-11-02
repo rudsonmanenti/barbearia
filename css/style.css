@@ -370,6 +370,63 @@ footer {
   .hamb {
     display: block;
     cursor: pointer;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: var(--accent);
+    transition: transform 0.3s ease;
+  }
+
+  /* Ícone do menu: animação para ✕ */
+  .hamb::before {
+    content: "☰";
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .hamb.open::before {
+    content: "✕";
+    transform: rotate(180deg);
+    color: #ffdd7f;
+  }
+
+  nav a {
+    padding: 10px 0;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: right;
+  }
+
+  nav a:last-child {
+    border-bottom: none;
+  }
+}
+@media (max-width: 880px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px;
+    transform: translateY(-20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+  }
+
+  nav.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .hamb {
+    display: block;
+    cursor: pointer;
     font-size: 28px;
     background: none;
     border: none;
