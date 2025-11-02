@@ -86,12 +86,8 @@ border: 2px solid var(--accent);
 }
 .logo img {
   width: 100%;
-<<<<<<< HEAD
   height: 100%;
   border-radius: 50%;
-=======
-  height: 100%; 
->>>>>>> 8da17b4610354915cad191486f635dc8b9059b06
 }
 
 
