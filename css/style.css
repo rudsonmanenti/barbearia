@@ -344,3 +344,26 @@ footer {
     font-size: 0.9rem;
   }
 }
+@media (max-width: 880px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    width: 180px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .hamb {
+    display: block;
+    cursor: pointer;
+  }
+}
+
