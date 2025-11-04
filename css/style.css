@@ -372,16 +372,31 @@ footer {
   .hamb {
     display: block;
     cursor: pointer;
-    font-size: 28px;
+    font-size: 26px;
     background: none;
     border: none;
     color: var(--accent);
+    transition: transform 0.3s ease;
+  }
+
+  /* Ícone do menu: animação para ✕ */
+  .hamb::before {
+    content: "☰";
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .hamb.open::before {
+    content: "✕";
+    transform: rotate(180deg);
+    color: #ffdd7f;
   }
 
   nav a {
     padding: 10px 0;
     color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: right;
   }
 
   nav a:last-child {
